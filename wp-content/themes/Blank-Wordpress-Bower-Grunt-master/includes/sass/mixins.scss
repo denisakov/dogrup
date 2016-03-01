@@ -1,0 +1,76 @@
+
+/*-----------------------------------------------------------------------------------*/
+/*  Mixins
+/*-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  Set the width to a percentage and center with margin
+/*-----------------------------------------------------------------------------------*/
+@mixin post-width-responsive( $pc ) {
+    width: percentage($pc);
+    margin: 0 auto;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Media queries -  Set CSS based on screen size
+/*-----------------------------------------------------------------------------------*/
+@mixin responsive( $screen_type ) {
+
+    @if $screen_type == xl {
+        
+        @media ( min-width: 1220px ) { @content; }
+    
+    } @else if  $screen_type == lg {
+        
+        @media ( min-width: 768px ) { @content; }
+
+    } @else if $screen_type == md {
+        
+        @media ( /* Mobile and up */ min-width: 569px ) { @content; }
+
+    } @else if $screen_type == sm {
+        
+        @media ( /* Mobile and up */ min-width: 0px ) { @content; }
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  Set padding top and bottom
+/*-----------------------------------------------------------------------------------*/
+@mixin pad_top_bottom($top: 0, $bottom: 0) {
+    padding-top: $top+px;
+    padding-bottom: $bottom+px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Set padding left and right
+/*-----------------------------------------------------------------------------------*/
+@mixin pad_left_right($left: 0, $right: 0) {
+    padding-left: $left+px;
+    padding-right: $right+px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Set margin top and bottom
+/*-----------------------------------------------------------------------------------*/
+@mixin margin_top_bottom($top: 0, $bottom: 0) {
+    margin-top: $top+px;
+    margin-bottom: $bottom+px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Set margin left and right
+/*-----------------------------------------------------------------------------------*/
+@mixin margin_left_right($left: 0, $right: 0) {
+    margin-left: $left+px;
+    margin-right: $right+px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Set a border with direction
+/*-----------------------------------------------------------------------------------*/
+@mixin border($direction, $px, $style, $col) {
+    border-#{$direction}:$px+px, $style, $col;
+}

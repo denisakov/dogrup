@@ -1,0 +1,15 @@
+/*
+Theme Name:  Bower Test
+Theme URI:   Theme Location
+Author:      Luke Hayes
+Author URI:  http://authoruri.net
+Description: A Lovely Blank Wordpress theme
+Version:     1.0
+License:     License
+License URI: http://themeforest.net/licenses
+Tags:        light, dark, white
+Text Domain: read
+*/
+
+
+@import "includes/stylesheets/main.css";

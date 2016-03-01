@@ -1,0 +1,16 @@
+{
+  "name": "lukehayes",
+  "version": "0.0.0",
+  "authors": [
+    "lukehayes <lukepurplehayes@gmail.com>"
+  ],
+  "description": "Bower for this Wordpress theme",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
